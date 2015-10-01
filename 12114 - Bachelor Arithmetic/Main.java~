@@ -1,0 +1,27 @@
+import java.uti.*;
+public class Main
+{
+  public static void main(String []args)
+  {
+    Scanner abu=new Scanner(System.in);
+    try
+    {
+      while(true)
+      {
+        
+      }
+    }
+    
+    catch(Exception e)
+    {
+      e.printstackTrace();
+    }
+    finally
+    {
+      if(abu !=null)
+      {
+        abu.close();
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+import java.io.*;
+import java.util.*;
+class Main
+{
+  public static void main(String[]args) throws IOException
+  {
+    Bufferedreader abu=new Bufferedreader (new InputStreamReader(System.in))
+    int m=Integer.parseInt(abu.readLine());
+    while(true)
+    {
+      int e=Integer.parseInt(abu.readLine());
+      int f=Integer.parseInt(abu.readLine());
+      int c=Integer.parseInt(abu.readLine());
+      int sum=e+f;
+      int result=0;
+      int p=0;
+      int q=0;
+      while(sum>=c)
+      {
+        result=sum/c;
+        sum=sum/c+sum%c;
+      }
+      System.out.println(result);
+    }
+    abu.close();
+    System.exit(0);
+  }
+}
+    
+    
+    
+ 
